@@ -4,6 +4,8 @@ import Home from "./components/pages/Home";
 import FarmList from "./components/pages/FarmList/FarmList";
 import FarmDetail from "./components/pages/FarmDetail/FarmDetail";
 import Navbar from "./components/common/Navbar/Navbar";
+import Footer from "./components/common/Footer/Footer";
+import OwnProject from "./components/common/Banner/OwnProject";
 
 function App() {
     const navItems = [
@@ -16,38 +18,78 @@ function App() {
             id: "1",
             name: "Farm du lol",
             content: "Lolilol",
-            location: "",
+            location: "Salazie",
             cryptoName: "LolCoin",
             needs: [
                 {
-                    name: "Truc",
+                    name: "Matériels informatiques",
                     status: "12",
+                    color: "orange",
                 },
                 {
-                    name: "Chose",
+                    name: "Matières premières",
                     status: "25",
+                    color: "pink",
                 },
                 {
-                    name: "Machin",
+                    name: "Moyens humains",
                     status: "50",
+                    color: "dark-green",
                 },
             ],
-            image: "",
+            image: "/assets/img/solar-panel1.jpg",
             counterParts: [],
         },
         {
             id: "2",
             name: "Ferme des cheveux",
             content: "Miam des cheveux",
-            location: "",
+            location: "Cilaos",
             cryptoName: "HairyCoin",
             needs: [
                 {
-                    name: "",
-                    status: "",
+                    name: "Matériels informatiques",
+                    status: "12",
+                    color: "orange",
+                },
+                {
+                    name: "Matières premières",
+                    status: "25",
+                    color: "pink",
+                },
+                {
+                    name: "Moyens humains",
+                    status: "50",
+                    color: "dark-green",
                 },
             ],
-            image: "",
+            image: "/assets/img/solar-panel1.jpg",
+            counterParts: [],
+        },
+        {
+            id: "3",
+            name: "Ferme des cheveux",
+            content: "Miam des cheveux",
+            location: "Cilaos",
+            cryptoName: "HairyCoin",
+            needs: [
+                {
+                    name: "Matériels informatiques",
+                    status: "12",
+                    color: "orange",
+                },
+                {
+                    name: "Matières premières",
+                    status: "25",
+                    color: "pink",
+                },
+                {
+                    name: "Moyens humains",
+                    status: "50",
+                    color: "dark-green",
+                },
+            ],
+            image: "/assets/img/solar-panel1.jpg",
             counterParts: [],
         },
     ];
@@ -55,7 +97,11 @@ function App() {
         <Router>
             <div className='App'>
                 <Navbar item={navItems} />
-                <Route path='/' exact component={Home} />
+                <Route
+                    path='/'
+                    exact
+                    render={(props) => <Home {...props} list={farmList} />}
+                />
                 <Route
                     path='/farm'
                     exact
@@ -72,6 +118,8 @@ function App() {
                         />
                     )}
                 />
+                <OwnProject />
+                <Footer />
             </div>
         </Router>
     );

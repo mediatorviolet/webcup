@@ -4,7 +4,7 @@ import styled from "styled-components";
 import "../../../index.css";
 
 const StyledNav = styled.nav`
-    width: 75%;
+    width: 60%;
     margin-top: 2rem;
     background-color: var(--dark-blue);
     border-radius: 20px;
@@ -14,7 +14,7 @@ const StyledNav = styled.nav`
 const Navbar = ({ item }) => {
     return (
         <div className='d-flex justify-content-center'>
-            <StyledNav className='navbar navbar-expand-lg navbar-dark'>
+            <StyledNav className='navbar navbar-expand-xl navbar-dark'>
                 <div className='container-fluid'>
                     <Link to='/' className='navbar-brand'>
                         Farmfunding Pëi

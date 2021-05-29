@@ -4,8 +4,8 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const StyledContainer = styled.div`
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    // padding-top: 5rem;
+    // padding-bottom: 5rem;
 `;
 
 const Page = ({ children, back = null }) => {
@@ -13,10 +13,9 @@ const Page = ({ children, back = null }) => {
         <motion.div
             exit={{ opacity: 0, y: -50 }}
             initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            className='mb-5 pb-5'>
+            animate={{ opacity: 1, y: 0 }}>
             <StyledContainer>
-                <div className='container'>
+                <div className=''>
                     <div className='d-flex justify-content-center'>
                         {back && (
                             <div className=''>

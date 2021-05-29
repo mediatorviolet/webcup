@@ -5,6 +5,8 @@
     --pink: #ef476f;
     --orange: #fca311;
     --dark-green: #2d6a4f;
+    --white: #fff;
+    --gradient: linear-gradient(105.76deg, #06d6a0 4.11%, #073b4c 98.76%);
 }
 
 body {
@@ -12,6 +14,11 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    color: var(--dark-blue);
+}
+
+ul {
+    list-style-type: none;
 }
 
 .navbar-brand,
@@ -27,4 +34,16 @@ body {
 .nav-link {
     font-size: 16px;
     color: var(--green) !important;
+}
+
+.anchor-link {
+    color: var(--dark-blue);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    transition: all ease-in 0.2s;
+}
+
+.anchor-link:hover {
+    color: var(--green);
 }
