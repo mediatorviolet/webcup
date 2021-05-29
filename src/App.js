@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./components/pages/Home";
+import FarmList from "./components/pages/FarmList/FarmList";
+import FarmDetail from "./components/pages/FarmDetail/FarmDetail";
+import Navbar from "./components/common/Navbar/Navbar";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const navItems = [
+        { name: "Accueil", path: "/" },
+        { name: "Liste fermes", path: "/farm" },
+    ];
+    return (
+        <Router>
+            <div className='App'>
+                <Navbar item={navItems} />
+                <Route path='/' exact component={Home} />
+                <Route path='/farm' exact component={FarmList} />
+                <Route path='/farm/:id' exact component={FarmDetail} />
+            </div>
+        </Router>
+    );
 }
 
 export default App;
