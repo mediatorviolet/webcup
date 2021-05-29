@@ -1,16 +1,20 @@
-import { Icon } from "@iconify/react";
-// import home from "@iconify/icons-mdi-light/home";
 import React from "react";
-import Layout from "../../common/Layout/Layout";
+import { Link } from "react-router-dom";
+import Page from "../../common/Layout/Page";
 
-const FarmList = () => {
-    const list = [{ name: "Farm du lol", content: "Lolilol" }];
-
+const FarmList = ({ list }) => {
     return (
-        <Layout>
+        <Page>
             <h1>FarmList OMG!!!!!!!!!!!!!!!!!!!</h1>
-            <Icon icon="home" />
-        </Layout>
+            {list.map((el, index) => (
+                <div className='my-5' key={index}>
+                    <h3>{el.name}</h3>
+                    <hr />
+                    <p>{el.content}</p>
+                    <Link to={`/farm/${el.id}`}>Détail</Link>
+                </div>
+            ))}
+        </Page>
     );
 };
 

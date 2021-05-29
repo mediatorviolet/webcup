@@ -1,11 +1,14 @@
 import React from "react";
-import Layout from "../common/Layout/Layout";
+import Page from "../common/Layout/Page";
+import Section from "../common/Layout/Section";
 
 const Home = () => {
     return (
-        <Layout>
-            <h1>Accueil</h1>
-        </Layout>
+        <Page>
+            <Section>
+                AAAAAAA
+            </Section>
+        </Page>
     );
 };
 
