@@ -47,3 +47,9 @@ ul {
 .anchor-link:hover {
     color: var(--green);
 }
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+}

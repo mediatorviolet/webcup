@@ -6,6 +6,9 @@ import { motion } from "framer-motion";
 const StyledContainer = styled.div`
     // padding-top: 5rem;
     // padding-bottom: 5rem;
+    @media (max-width: 768px) {
+        overflow-x: hidden;
+    }
 `;
 
 const Page = ({ children, back = null }) => {

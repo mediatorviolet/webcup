@@ -6,6 +6,7 @@ import ButtonLink from "../Buttons/ButtonLink";
 const OwnProject = () => {
     return (
         <Section bgColor='var(--blue)'>
+            <div id="project"></div>
             <SubTitle color='white'>
                 Envie de lancer un projet de farmfunding ?
             </SubTitle>

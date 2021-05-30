@@ -36,8 +36,6 @@ const FarmDetail = ({ id, list }) => {
     let farm = list.find((el) => el.id === id);
     console.log(farm);
 
-    const handleDonation = () => {};
-
     let total = [];
     const globalStatus = () => {
         farm.needs.map((el) => {
@@ -61,33 +59,39 @@ const FarmDetail = ({ id, list }) => {
                         {farm.cryptoName}
                     </h5>
                 </div>
-                <div className='d-flex col'>
+                <div className='d-flex col-12'>
                     <RoundedImage
                         className='col-12 col-md-6'
                         image={farm.image}
                     />
-                    <div className='col-12 col-md-6 d-flex row justify-content-center ms-5'>
-                        <Percentage>
-                            <p>
-                                {Math.floor(total.reduce((a, b) => a * 1 + b * 1, 0) / 3)}%
-                            </p>
-                        </Percentage>
-                        <ul className='mt-4'>
-                            {farm.needs.map((el, index) => (
-                                <li key={index} className='list-item'>
-                                    {el.name}
-                                    <Progress
-                                        percentage={el.status}
-                                        color={el.color}
-                                    />
-                                </li>
-                            ))}
-                        </ul>
+                    <div className='col-12 col-md-6'>
+                        <div className=' d-flex row justify-content-center ms-5'>
+                            <Percentage>
+                                <p>
+                                    {Math.floor(
+                                        total.reduce(
+                                            (a, b) => a * 1 + b * 1,
+                                            0
+                                        ) / 3
+                                    )}
+                                    %
+                                </p>
+                            </Percentage>
+                            <ul className='mt-4'>
+                                {farm.needs.map((el, index) => (
+                                    <li key={index} className='list-item'>
+                                        {el.name}
+                                        <Progress
+                                            percentage={el.status}
+                                            color={el.color}
+                                        />
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <p className='mt-5'>
-                    {farm.content}
-                </p>
+                <p className='mt-5'>{farm.content}</p>
             </Section>
             <Form />
         </Page>

@@ -24,7 +24,7 @@ function App() {
     const navItems = [
         { name: "Le concept", path: "/" },
         { name: "Les fermes à crypto", path: "/farm" },
-        { name: "Lancer un projet de ferme", path: "#" },
+        { name: "Lancer un projet de ferme", path: "#project" },
     ];
 
     const farmList = [
@@ -72,6 +72,11 @@ function App() {
                     status: "23",
                     color: "pink",
                 },
+                {
+                    name: "Moyens humains",
+                    status: "44",
+                    color: "dark-green",
+                },
             ],
             image: "/assets/img/eolic.jpg",
         },
@@ -84,9 +89,19 @@ function App() {
             cryptoName: "Lethean",
             needs: [
                 {
+                    name: "Matériels informatiques",
+                    status: "75",
+                    color: "orange",
+                },
+                {
                     name: "Matières premières",
                     status: "53",
                     color: "pink",
+                },
+                {
+                    name: "Moyens humains",
+                    status: "29",
+                    color: "dark-green",
                 },
             ],
             image: "/assets/img/barrage.jpg",
@@ -105,6 +120,11 @@ function App() {
                     color: "orange",
                 },
                 {
+                    name: "Matières premières",
+                    status: "11",
+                    color: "pink",
+                },
+                {
                     name: "Moyens humains",
                     status: "27",
                     color: "dark-green",
@@ -120,6 +140,11 @@ function App() {
             location: "St-Joseph",
             cryptoName: "Litecoin",
             needs: [
+                {
+                    name: "Matériels informatiques",
+                    status: "69",
+                    color: "orange",
+                },
                 {
                     name: "Matières premières",
                     status: "57",
@@ -168,6 +193,11 @@ function App() {
             cryptoName: "Dash",
             needs: [
                 {
+                    name: "Matériels informatiques",
+                    status: "16",
+                    color: "orange",
+                },
+                {
                     name: "Matières premières",
                     status: "5",
                     color: "pink",
@@ -198,6 +228,11 @@ function App() {
                     status: "13",
                     color: "pink",
                 },
+                {
+                    name: "Moyens humains",
+                    status: "53",
+                    color: "dark-green",
+                },
             ],
             image: "/assets/img/FERME_EOLIENNE2.jpg",
         },
@@ -209,6 +244,11 @@ function App() {
             location: "St-Louis",
             cryptoName: "Ripple",
             needs: [
+                {
+                    name: "Matériels informatiques",
+                    status: "51",
+                    color: "orange",
+                },
                 {
                     name: "Matières premières",
                     status: "15",
