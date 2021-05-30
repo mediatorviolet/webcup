@@ -15,6 +15,9 @@ function App() {
     useEffect(() => {
         setTimeout(() => {
             setBlock(true);
+            setTimeout(() => {
+                setBlock(false);
+            }, 10000);
         }, 1000);
     }, []);
 
