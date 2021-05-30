@@ -22,9 +22,9 @@ function App() {
     }, []);
 
     const navItems = [
-        { name: "Les cryptomonnaies", path: "/" },
-        { name: "Les projets", path: "/farm" },
-        { name: "Lancer un projet", path: "#" },
+        { name: "Le concept", path: "/" },
+        { name: "Les fermes à crypto", path: "/farm" },
+        { name: "Lancer un projet de ferme", path: "#" },
     ];
 
     const farmList = [

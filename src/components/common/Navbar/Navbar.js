@@ -17,7 +17,8 @@ const Navbar = ({ item }) => {
             <StyledNav className='navbar navbar-expand-xl navbar-dark'>
                 <div className='container-fluid'>
                     <Link to='/' className='navbar-brand'>
-                        Farmfunding Pëi
+                        Farmfunding
+                        <span style={{ color: "var(--green)" }}>Pëi</span>
                     </Link>
                     <button
                         className='navbar-toggler'
@@ -37,7 +38,17 @@ const Navbar = ({ item }) => {
                                 {item.map((el, index) => (
                                     <li className='nav-item me-2' key={index}>
                                         <Link to={el.path} className='nav-link'>
-                                            {el.name}
+                                            {el.name ===
+                                            "Lancer un projet de ferme" ? (
+                                                <span
+                                                    style={{
+                                                        color: "var(--blue)",
+                                                    }}>
+                                                    {el.name}
+                                                </span>
+                                            ) : (
+                                                el.name
+                                            )}
                                         </Link>
                                     </li>
                                 ))}
