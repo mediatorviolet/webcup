@@ -67,9 +67,9 @@ const Home = ({ list }) => {
             <Section bgColor='var(--gradient)'>
                 <SubTitle color='white'>Les projets de fermes de minage</SubTitle>
                 <div className='d-flex row justify-content-between mt-5'>
-                    {list.map((el, index) => (
-                        <Card key={index} farm={el} />
-                    ))}
+                    <Card farm={list[0]} />
+                    <Card farm={list[1]} />
+                    <Card farm={list[2]} />
                 </div>
                 <div className='d-flex justify-content-center mt-5'>
                     <ButtonLink

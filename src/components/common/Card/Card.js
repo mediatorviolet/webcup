@@ -8,6 +8,8 @@ const StyledCard = styled.div`
     border: 5px solid white;
     border-radius: 20px;
     box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.25);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     transition: transform ease-in-out 0.2s;
     // cursor: pointer;
     padding: 0;
