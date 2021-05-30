@@ -10,12 +10,7 @@ const OwnProject = () => {
                 Envie de lancer un projet de farmfunding ?
             </SubTitle>
             <p className='text-white text-center mt-5'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                iaculis ut mauris id fermentum. Proin non eros eu arcu
-                consectetur efficitur. Curabitur faucibus cursus risus vitae
-                scelerisque. Fusce eget ante urna. Praesent suscipit a sem non
-                convallis. Sed hendrerit aliquet urna vel viverra. Morbi lacus
-                risus, pharetra vel feugiat sed, egestas sit amet sem.
+            Vous avez un projet de création de ferme de minage pour générer une cryptomonnaie de votre choix, mais vous avez besoin d’aide sur le plan matériel ou humain ? Ne scrollez plus (en même temps, après il n’y a plus rien...) ! Vous êtes au bon endroit. </br>Laissez-nous votre email et nous vous recontacterons très vite afin de vous accompagner dans votre projet. Ainsi, nous pourrons créer ensemble votre fiche de farmfunding. 
             </p>
             <div className='d-flex justify-content-center'>
                 <ButtonLink

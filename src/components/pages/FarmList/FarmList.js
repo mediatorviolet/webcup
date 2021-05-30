@@ -11,13 +11,7 @@ const FarmList = ({ list }) => {
             <Section>
                 <SubTitle>Les projets de fermes à cryptomonnaie</SubTitle>
                 <p className='text-center my-5'>
-                    Nulla interdum ante rutrum euismod consequat. Pellentesque
-                    ornare suscipit vulputate. Nulla libero metus, imperdiet
-                    luctus ex ut, facilisis efficitur metus. Praesent elementum
-                    lectus eget risus efficitur tristique. Nullam non sodales
-                    justo. Vivamus blandit eros eu gravida fringilla. Curabitur
-                    malesuada a orci sed lobortis. Vestibulum quis facilisis
-                    quam.
+                Découvrez tous les projets de ferme de minage disponibles sur notre plateforme. Nous mettons en avant l’énergie qui sera utilisée pour miner la cryptomonnaie en question afin que vous puissiez prendre en compte ce paramètre écologique dans votre choix.  
                 </p>
                 <div className='d-flex row justify-content-between mt-5'>
                     {list.map((el, index) => (

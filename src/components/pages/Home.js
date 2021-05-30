@@ -38,7 +38,7 @@ const Home = ({ list }) => {
             </Section>
 
             <Section>
-                <SubTitle>Le concept ?</SubTitle>
+                <SubTitle>Le concept</SubTitle>
                 <div className='col-12 col-md-6 p-4'>
                     <img
                         src='/assets/img/icone_réunion.svg'
@@ -47,28 +47,25 @@ const Home = ({ list }) => {
                 </div>
                 <div className='col-12 col-md-6 p-4'>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nam iaculis ut mauris id fermentum. Proin non eros eu
-                        arcu consectetur efficitur. Curabitur faucibus cursus
-                        risus vitae scelerisque. Fusce eget ante urna. Praesent
-                        suscipit a sem non convallis. Sed hendrerit aliquet urna
-                        vel viverra. Morbi lacus risus, pharetra vel feugiat
-                        sed, egestas sit amet sem.
+                    Notre société a connu de nombreux changement lors de cette dernière décennie. Les cryptomonnaies régissent à présent les échanges, et ce, peu importe leurs natures. 
                     </p>
                     <p>
-                        Nulla interdum ante rutrum euismod consequat.
-                        Pellentesque ornare suscipit vulputate. Nulla libero
-                        metus, imperdiet luctus ex ut, facilisis efficitur
-                        metus. Praesent elementum lectus eget risus efficitur
-                        tristique. Nullam non sodales justo. Vivamus blandit
-                        eros eu gravida fringilla. Curabitur malesuada a orci
-                        sed lobortis. Vestibulum quis facilisis quam.{" "}
+                    L’avantage des cryptomonnaies réside dans leur création qui se veut plus accessible que les monnaies dites “classiques” que nous connaissions encore il y a quelques années de cela.
+                    </p>
+                    <p>
+                    En effet, pour générer de la cryptomonnaie, il faut créer des fermes de minages.
+                    </p>
+                    <p>
+                    La Réunion bénéficie de plusieurs atouts, notamment d’ordre géographique pour la création de ces fermes.  Elle attire donc plusieurs projets de création de fermes de minage qui n’attendent que votre aide ! 
+                    </p>
+                    <p>
+                    Sur FarmfundingPëi, engagez-vous dans des projets de création de fermes de minages en apportant du matériel, des matières premières ou votre aide sur le chantier. Une fois la ferme construite, vous recevrez l’équivalent de votre investissement en cryptomonnaie, générée par les fermes que vous aurez aidées à voir le jour. 
                     </p>
                 </div>
             </Section>
 
             <Section bgColor='var(--gradient)'>
-                <SubTitle color='white'>Les projets de fermes</SubTitle>
+                <SubTitle color='white'>Les projets de fermes de minage</SubTitle>
                 <div className='d-flex row justify-content-between mt-5'>
                     {list.map((el, index) => (
                         <Card key={index} farm={el} />
@@ -88,22 +85,10 @@ const Home = ({ list }) => {
                 <SubTitle>Qu'est-ce qu'une cryptomonnaie ?</SubTitle>
                 <div className='col-12 col-md-6 p-4'>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nam iaculis ut mauris id fermentum. Proin non eros eu
-                        arcu consectetur efficitur. Curabitur faucibus cursus
-                        risus vitae scelerisque. Fusce eget ante urna. Praesent
-                        suscipit a sem non convallis. Sed hendrerit aliquet urna
-                        vel viverra. Morbi lacus risus, pharetra vel feugiat
-                        sed, egestas sit amet sem.
+                    Une cryptomonnaie est une devise électronique, ou virtuelle, car elle n'a aucune forme physique. Elle s'échange de pair à pair sur un système informatique décentralisé, ou blockchain, tenu à jour en permanence et (réputé) inviolable. Le code source d'une blockchain se base sur les principes de la cryptographie pour valider les transactions et émettre la monnaie elle-même.
                     </p>
                     <p>
-                        Nulla interdum ante rutrum euismod consequat.
-                        Pellentesque ornare suscipit vulputate. Nulla libero
-                        metus, imperdiet luctus ex ut, facilisis efficitur
-                        metus. Praesent elementum lectus eget risus efficitur
-                        tristique. Nullam non sodales justo. Vivamus blandit
-                        eros eu gravida fringilla. Curabitur malesuada a orci
-                        sed lobortis. Vestibulum quis facilisis quam.{" "}
+                    Ce registre est ouvert et consultable par tous sur Internet. Il intègre les éléments constitutifs de chaque transaction réalisée : le montant de la transaction, l'adresse de l'émetteur, celle du destinataire, ainsi qu'une empreinte cryptographique. Malgré tout, chaque cryptomonnaie ayant son propre fonctionnement, pour certaines d'entre elles les transactions sont volontairement intraçables.
                     </p>
                 </div>
                 <div className='col-12 col-md-6 p-4'>
@@ -120,22 +105,10 @@ const Home = ({ list }) => {
                 </div>
                 <div className='col-12 col-md-6 p-4'>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nam iaculis ut mauris id fermentum. Proin non eros eu
-                        arcu consectetur efficitur. Curabitur faucibus cursus
-                        risus vitae scelerisque. Fusce eget ante urna. Praesent
-                        suscipit a sem non convallis. Sed hendrerit aliquet urna
-                        vel viverra. Morbi lacus risus, pharetra vel feugiat
-                        sed, egestas sit amet sem.
+                    Pour acheter une cryptomonnaie, le détenteur potentiel se rendra le plus souvent sur une plateforme de change en ligne. Une plateforme dont le sérieux et le professionnalisme s'apprécient au nombre de transactions qui s'y déroulent et au volume d'affaires réalisé, ainsi qu'à la nature des informations demandées aux potentiels acquéreurs.
                     </p>
                     <p>
-                        Nulla interdum ante rutrum euismod consequat.
-                        Pellentesque ornare suscipit vulputate. Nulla libero
-                        metus, imperdiet luctus ex ut, facilisis efficitur
-                        metus. Praesent elementum lectus eget risus efficitur
-                        tristique. Nullam non sodales justo. Vivamus blandit
-                        eros eu gravida fringilla. Curabitur malesuada a orci
-                        sed lobortis. Vestibulum quis facilisis quam.{" "}
+                    Selon les configurations, les cryptomonnaies sont cessibles contre des biens, des services ou de l'argent. Sans pouvoir parler de "cours" stricto sensu, on notera que l'évolution de la valeur de la quasi-totalité des cryptomonnaies se caractérise par une très forte volatilité.
                     </p>
                 </div>
             </Section>
