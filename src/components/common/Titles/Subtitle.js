@@ -5,8 +5,8 @@ const SubTitle = styled.h3`
     font-weight: bold;
     font-size: 30px;
     line-height: 30px;
-    text-align: center;
-    color: ${(props) => props.color || ""}
+    text-align: ${(props) => props.align || "center"};
+    color: ${(props) => props.color || ""};
 `;
 
 export default SubTitle;

@@ -84,7 +84,7 @@ const Card = ({ farm }) => {
                 </div>
                 <div className='col-4 d-flex justify-content-center'>
                     <Percentage>
-                        <p>{total.reduce((a, b) => a * 1 + b * 1, 0) / 3}%</p>
+                        <p>{Math.floor(total.reduce((a, b) => a * 1 + b * 1, 0) / total.length)}%</p>
                     </Percentage>
                 </div>
                 <div className='d-flex justify-content-between'>
