@@ -69,7 +69,7 @@ const FarmDetail = ({ id, list }) => {
                     <div className='col-12 col-md-6 d-flex row justify-content-center ms-5'>
                         <Percentage>
                             <p>
-                                {total.reduce((a, b) => a * 1 + b * 1, 0) / 3}%
+                                {Math.floor(total.reduce((a, b) => a * 1 + b * 1, 0) / 3)}%
                             </p>
                         </Percentage>
                         <ul className='mt-4'>
@@ -86,31 +86,10 @@ const FarmDetail = ({ id, list }) => {
                     </div>
                 </div>
                 <p className='mt-5'>
-                    Nulla interdum ante rutrum euismod consequat. Pellentesque
-                    ornare suscipit vulputate. Nulla libero metus, imperdiet
-                    luctus ex ut, facilisis efficitur metus. Praesent elementum
-                    lectus eget risus efficitur tristique. Nullam non sodales
-                    justo. Vivamus blandit eros eu gravida fringilla. Curabitur
-                    malesuada a orci sed lobortis. Vestibulum quis facilisis
-                    quam.
+                    {farm.content}
                 </p>
             </Section>
             <Form />
-            {/* <h1>Farm detail WTF ?!?!!!??</h1>
-            <h2>{farm.name}</h2>
-            <p>{farm.content}</p>
-            <p>{farm.cryptoName}</p>
-            <div>
-                <h3>Donnez :</h3>
-                <ul>
-                    {farm.needs.map((el, index) => (
-                        <li key={index} className='list-item'>
-                            {el.name}
-                            <Progress percentage={el.status} />
-                        </li>
-                    ))}
-                </ul>
-            </div> */}
         </Page>
     );
 };

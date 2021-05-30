@@ -15,9 +15,9 @@ const StyledBtn = styled.button`
     font-size: 20px;
 `;
 
-const ButtonLink = ({ text, icon, color }) => {
+const ButtonLink = ({ text, icon, color, to }) => {
     return (
-        <Link to='/farm'>
+        <Link to={to}>
             <StyledBtn color={color}>
                 {text}
                 {icon && (
